@@ -1,0 +1,345 @@
+html,
+body {
+height: 100%;
+}
+ 
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -105px;
+}
+
+#push {
+  height: 105px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans";
+	background: url("images/background_main_tile.jpg") repeat scroll 0 0 #161616;
+	color: #A1A1A1;
+	text-shadow: 0 2px 0 #000000;
+	font-size: 16px;
+}
+
+a {
+	cursor: pointer;
+	outline: 0;
+	color: #5a8e00;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+a:hover, a:visited {
+	text-decoration: none;
+	color: #5a8e00;
+}
+
+li {
+  line-height:26px;
+} 
+
+a img {
+	border: none;
+}
+
+strong {
+  color: white;
+}
+
+.about ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+.about img {
+  height:auto;
+  max-width:100%;
+  padding-bottom:13px;
+  padding-top:18px;
+  vertical-align:middle; 
+}
+
+
+.about  li { 
+    padding-left: 1em; 
+    text-indent: -.7em;
+}
+
+.about  li:before {
+    content: "• ";
+    color: #a0004f; /* or whatever color you prefer */
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.clear {
+	clear: both;
+}
+#header {
+  margin-top: 40px;
+	height: 621px;
+	background: url(images/plasmiq_header.jpg) #0b111d center;
+}
+
+#header.small-header {
+  height: 193px;
+  background: url(images/plasmiq_internal_header.jpg) #0b111d center;
+}
+
+.center {
+	width: 672px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.nicefont {
+	font-style: italic;
+	font-size: 25px;
+	color: #a1a1a1;
+	font-weight: 400;
+	text-shadow: 0px 2px 0 #000000;
+	filter: dropshadow(color=#000000, offx=0, offy=2); 
+}
+
+#top {
+	background: url(images/background_top_horizontal_tile.jpg)  #161616 repeat-x;
+	height: 80px;
+	line-height: 80px;
+}
+
+#top span {
+	position: relative;
+	top: 20px;
+}
+
+#middle {
+	background: url(images/background_main_tile.jpg) #161616;	
+	padding-top: 1px;
+}
+
+.project {
+	margin-top: 40px;
+	width: 672px;
+	height: 212px;
+	background-image: url(images/background_project_module.png);
+	text-align: left;
+}
+
+.project .thumb {
+	margin-left: 15px;
+	margin-top: 15px;
+}
+.project div {
+	margin-top: 25px;
+	width: 380px;
+	float: right;
+}
+
+.tagline {
+	font-style: italic;
+	font-size: 14px;
+	color: #979797;
+	font-weight: 600;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.description {
+	font-style: italic;
+	font-size: 18px;
+	color: #6cac10;
+	margin-bottom: 15px;
+}
+
+
+#flowformer .description {
+	color: #028F8D;
+	width: 90%;
+}
+
+#metabrane .description {
+	color: #d03e3e;
+	width: 90%;
+}
+
+#nervesynapse .description {
+	color: #d7327c;
+}
+
+#vectorsplay .description {
+	color: #285e75;
+}
+
+.visit a {
+	position: relative;
+	left: -5px;
+	width: 151px;
+	height: 29px;
+	display: block;
+	background-image: url(images/launch_button.png);
+}
+
+.visit a:hover {
+	background-position: -151px 0;
+}
+
+#bottom {
+	clear: both;
+	background: url(images/background_bottom_horizontal_tile.jpg)  #161616 repeat-x;	
+	height: 100px;
+	line-height: 100px;
+}
+
+#bottom .nicefont {
+	font-size: 22px;
+	font-weight: 300;
+}
+
+#bottom span {
+	position: relative;
+	top: -10px;
+}
+
+#footer {
+	background: #000000;
+	height: 105px;
+	color: #909090;
+	font-size: 12px;
+	font-family: arial;
+}
+
+#footer a, #footer a:visited, #footer a:hover {
+  color: #909090;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+#footer	a {
+	float: left;
+	color: #909090;
+	margin-right: 30px;
+	text-decoration: none;
+}
+
+#footer .container {
+	text-align: left;
+	padding-top: 45px;
+}
+
+#footer .container span {
+	margin-right: 40px;
+	float: left;
+}
+
+#paypal button {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    top: -1px;
+}
+
+#twitter-follow, #twitter {
+	float: right !important;
+	position: relative;
+  top: -3px;
+}
+
+#twitter {
+	margin-right: -20px !important;
+}
+
+
+.fancybox-overlay a {
+	color: blue;
+	text-decoration: none;
+}
+
+.fancybox-overlay a:hover {
+	text-decoration: underline;
+}
+
+.fancybox-title {
+	text-align: center;
+}
+
+#about, #changelog {
+	margin-top: -50px;
+	margin-bottom: 40px;
+}
+
+#about p {
+  margin: 15px 0;
+  line-height:1.4em; 
+  width:560px; 
+}
+
+.changelog dl {
+  margin: 0;
+}
+
+.changelog dd {
+  margin-left: 0px;
+}
+
+.changelog dt {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.changelog .twitter-timeline, .about .twitter-timeline {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* carousel */ 
+.carousel {
+  margin-bottom: 0px;
+}
+
+#top .item {
+  margin-top: 20px;
+}
+
+/* Bootstrap customization */
+.page-header {
+  font-size: 48px;
+  border-color: #A1A1A1;
+  color: #d5d5d5;
+  margin-bottom: 0px;
+  border-color: rgba(161,161,161,0.5);
+  border-bottom: 0px;
+}
+
+.page-subheader {
+  font-size:22px;
+  font-weight: 600;
+  color:  #979797;
+  line-height:29px;
+  margin-top:10px;
+  padding-bottom:10px;
+}
+
+.navbar a{
+  font-size: 14px;
+}
+
+.navbar .active a{
+  color: #d5d5d5 !important;
+}
+
+/* about */
+
+.about p {
+  width: 560px; 
+}

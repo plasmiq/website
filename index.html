@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,300italic,600,600italic' rel='stylesheet' type='text/css'>
+		<title>Powered by Plasmiq™</title>
+		<meta name="description" content="Plasmiq - design and development - We make online tools for your hyper-connected life. Building creatively productive apps, extensions and techniques across emergent marketplaces, where data, information, content and experience are empowered as experiential interfaces. Plasmiq thrives amongst creative explorations of interplay and ambience between organisms and environments." />
+		<meta name="keywords" content="design, development, agile, open source, opensource, designers, developers, marketplace, intelligence, evolution, sci-fi, fun, space, emergence, entpm, plasmiq, collaboration, tools, software, freeware, utilities, tools, tzs, timezoneslider, metabrane, nervesynapse, resonancecore, livingcell, metaconstructs, personas, entanglement, free, time, emotion, projection, xyz, creativity, productivity, html5, javascript, web2.0, web apps, web app, cloud, sas, ideas, frameworks, meta-interfaces, beta software, UX, UI, user interfaces, flowformer, productivity, productivity tools, productivity apps, supermuncher, idea discovery, blend of flesh and information, hypercosmix, user experience, games," />
+		<link rel="shortcut icon" href="http://plasmiq.com/favicon.ico">
+		
+		<!-- Add jQuery library	 -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+	    <!-- Bootstrap -->
+	    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+		<!-- Add mousewheel plugin (this is optional) -->
+		<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.2" type="text/css" media="screen" />
+		<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.2"></script>
+
+		<!-- kontactr -->
+		<link href="http://kontactr.com/kpu/facebox.css" media="screen" rel="stylesheet" type="text/css"/>
+		<script src="http://kontactr.com/kpu/facebox.js" type="text/javascript"></script>
+
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				
+				$('.carousel').carousel({
+				  interval: 4000,
+				  pause: "none"
+				});
+
+				$('a[rel*=facebox]').facebox()
+
+				$(".about").fancybox();
+
+				
+				function hideonscroll (){  
+					var element = $(".hideonscroll");
+					if ($(this).scrollTop() < 800) {
+				        element.fadeOut();
+				    } else {
+			            element.fadeIn(); 
+				    }
+				}
+				hideonscroll();
+				$(document).scroll(hideonscroll);
+
+				$("a.fancybox").fancybox({
+					beforeLoad: function() {
+						var link = $(this.element).parent().find(".visit a");
+			            this.title = "<a href='"+link.attr("href")+"'>"+link.attr("href")+"</a>";
+			        }, 
+			        helpers : {
+				        title: {
+				            type: 'inside'
+				        }
+				    }
+				});
+			});
+		</script>
+		
+		<link href="style.css" rel="stylesheet" media="screen">
+		<style>
+			#wrap {
+				position: relative;
+  				z-index: 2;
+			}
+			#footer {
+				position: fixed;
+				bottom: 0;
+				width: 100%;
+				z-index: 1;
+			}
+		</style>
+	</head>
+	<body>
+	  <div id="wrap">
+	   <a name="home"></a>
+	   <div class="navbar navbar-inverse navbar-fixed-top" id="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+       
+          <!--
+          <a class="brand" href="#">Plasmiq</a>
+          -->
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li class=""><a href="#projects">Projects</a></li>
+              <li><a class="" href="about.html">About</a></li>
+              <li><a href="changelog.html">Changelog</a></li>
+              <li> 
+              	<div id="kontactr-form" style="display:none;">
+              		<iframe src="http://kontactr.com/xuser/156452" width="400px" height="600px" frameborder="0"></iframe>
+              	</div>
+              	<a href="#kontactr-form" rel="facebox">Contact</a>
+              </li>
+            </ul>
+            <ul class="hideonscroll nav pull-right">
+              <li><a href="#">back to top</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+		<div id="header"></div>
+		<!--
+		<div id="top">
+			<div class="center">
+				<span class="nicefont">We make online tools for your hyper-connected life ...</span>
+				
+			</div>
+		</div>
+		-->
+	  <div id="top" class="carousel">
+      <!-- Carousel items -->
+      <div class="carousel-inner center">
+        <div class="nicefont active item">We make online tools for your hyper-connected life ...</div>
+        <div class="nicefont item">Creating an impact on the future one app at a time ...</div>
+        <div class="nicefont item">Preparing us all now for what is to come in the future ...</div>
+        <div class="nicefont item">Helping sync minds to fluid and adaptive frameworks ...</div>
+        <div class="nicefont item">Where individual and collective be themselves ...</div>
+        <div class="nicefont item">Data, information, content and experience breathe ...</div>
+      </div>
+    </div>
+    <div id="projects">
+		  <div id="middle">
+			  <div class="center" >
+				  <div id="timezoneslider" class="project">			
+					  <a class="fancybox" rel="group" href="images/project_timezoneslider_screenshot_01.png" title="timezoneslider">
+						  <img src="images/project_timezoneslider_thumbnail.png" class="thumb"/>
+					  </a>
+					  <div>
+						  <a href="http://timezoneslider.com/" alt="timezondeslider" target="_blank">
+							  <img src="images/project_timezoneslider_logo.png" class="logo"/>
+						  </a>
+						  <p class="tagline">Sync around the world when everyone’s colors align.</p>
+						  <p class="description">A free time tool to help you coordinate and visualise your friends’ availability.</p>
+						  <p class="visit"><a href="http://timezoneslider.com/" alt="timezondeslider" target="_blank"></a></p>
+					  </div>
+				  </div>
+
+				  <div id="flowformer" class="project">
+					  <a class="fancybox" rel="group" href="images/project_flowformer_screenshot_01.png" title="flowformer">	
+						  <img src="images/project_flowformer_thumbnail.png" class="thumb"/>
+					  </a>
+					  <div>
+						  <a href="http://flowformer.com/" alt="flowformer" target="_blank">
+							  <img src="images/project_flowformer_logo.png" class="logo"/>
+						  </a>
+						  <p class="tagline">What one thing do you need some help with today?</p>
+						  <p class="description">A free focus tool to help you get one thing done or not done each day.</p>
+						  <p class="visit"><a href="http://flowformer.com/" alt="flowformer" target="_blank"></a></p>
+					  </div>
+				  </div>
+			
+			
+			    <div id="metabrane" class="project">			
+			    		<a class="fancybox" rel="group" href="images/project_metabrane_screenshot.jpg" title="metabrane">
+						  <img src="images/project_metabrane_thumbnail.png" class="thumb"/>
+					  </a>
+					  <div>
+						  <a href="http://metabrane.co/" alt="metabrane" target="_blank">
+							  <img src="images/project_metabrane_logo.png" class="logo"/>
+						  </a>
+						  <p class="tagline">Create endless weavements with images and words.</p>
+						  <p class="description">A free visual communication engine to discover thoughts and share insights.</p>
+						  <p class="visit"><a href="http://metabrane.co/" alt="metabrane" target="_blank"></a></p>
+					  </div>
+			    </div>
+			
+			    <div id="nervesynapse" class="project">			
+			    		<a class="fancybox" rel="group" href="images/project_nervesynapse_screenshot.jpg" title="nervesynapse">
+						  <img src="images/project_nervesynapse_thumbnail.png" class="thumb"/>
+					  </a>
+				    	<div>
+				    		<a href="http://nervesynapse.com/" alt="nervesynapse" target="_blank">
+							  <img src="images/project_nervesynapse_logo.png" class="logo"/>
+						  </a>
+					    	<p class="tagline">Interact along threads of your ideas emerging.</p>
+					    	<p class="description">A free visual compass engine to encode and decode connections along threads of data.</p>
+					    	<p class="visit"><a href="http://nervesynapse.com/" alt="nervesynapse" target="_blank"></a></p>
+				    	</div>
+			    </div>
+			    
+			    <div id="vectorsplay" class="project">			
+			    		<a class="fancybox" rel="group" href="images/project_vectorsplay_screenshot_01.png" title="vectorsplay">
+						  <img src="images/project_vectorplay_thumbnail.png" class="thumb"/>
+					  </a>
+				    	<div>
+				    		<a href="http://vectorsplay.com/" alt="vectorsplay" target="_blank">
+							  <img src="images/project_vectorsplay_logo.png" class="logo"/>
+						  </a>
+					    	<p class="tagline">Let environments and organisms stimulate response.</p>
+					    	<p class="description">An evolutionary game engine for object based communication of your mind.</p>
+					    	<p class="visit"><a href="http://vectorsplay.com/" alt="vectorsplay" target="_blank"></a></p>
+				    	</div>
+			    </div>
+			    
+			    
+			  </div>
+			  <div class="clear"></div>
+		  </div>
+		  <div id="bottom">
+			  <div class="center">
+				  <span class="nicefont">More coming soon!</span>
+			  </div>
+		  </div>
+		</div>
+		<div id="push"></div>
+	</div> <!-- end #wrap -->
+		<div id="footer">
+			<div class="container">
+				<span>2012-2013 &copy; Plasmiq</span>
+				<a href="about.html">About</a>
+				<span id="paypal">
+			        <form target="_blank" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+			          <input type="hidden" name="cmd" value="_s-xclick">
+			          <input type="hidden" name="hosted_button_id" value="MCU5P6J4N5CB4">
+			          <button type="submit" name="submit"> 
+			            <span>Donate via Paypal</span>
+			          </button>
+			        </form>
+			    </span>
+			    <span id="twitter">
+			        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://plasmiq.com" data-text="Checkout awesome web apps for your hyper-connected life" data-hashtags="plasmiq">Tweet</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			    </span>
+			    <span id="twitter-follow">
+			        <a href="https://twitter.com/plasmiq" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @plasmiq</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+					</script>
+			    </span>
+			    
+		    </div>
+		</div>
+	</body>
+</html>
